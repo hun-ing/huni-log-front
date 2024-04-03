@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/nuxt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/server/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/huni-log/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="init project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +72,7 @@
       <workItem from="1712138150202" duration="363000" />
       <workItem from="1712138538303" duration="4506000" />
       <workItem from="1712143099750" duration="85000" />
-      <workItem from="1712143186291" duration="1194000" />
+      <workItem from="1712143186291" duration="1324000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -106,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712143132788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init project">
+      <option name="closed" value="true" />
+      <created>1712144450475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712144450475</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
