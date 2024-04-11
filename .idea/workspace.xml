@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="fix: eslint 재설정">
+      <change afterPath="$PROJECT_DIR$/assets/images/bg-display-01.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bg_login_oceanblue@3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cuckoo_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo_default_72px@2x.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/v-text-logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/v-text-logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/the-nav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/menus/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/vuetify.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/v-text-logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/v-text-logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stores/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stores/getters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -36,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/layouts",
+    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,7 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
+      <recent name="D:\HuniWorld\frontend\huni-log\public" />
+      <recent name="D:\HuniWorld\frontend\huni-log\assets" />
+      <recent name="D:\HuniWorld\frontend\huni-log\stores" />
+      <recent name="D:\HuniWorld\frontend\huni-log" />
+      <recent name="D:\HuniWorld\frontend\huni-log\pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +109,8 @@
       <workItem from="1712144543533" duration="56000" />
       <workItem from="1712323551263" duration="28000" />
       <workItem from="1712575647412" duration="3189000" />
-      <workItem from="1712578929084" duration="269000" />
+      <workItem from="1712578929084" duration="365000" />
+      <workItem from="1712826127537" duration="10395000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -122,7 +144,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712144584521</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: eslint 재설정 / default 레이아웃 추가">
+      <option name="closed" value="true" />
+      <created>1712579255264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712579255264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: eslint 재설정">
+      <option name="closed" value="true" />
+      <created>1712579287147</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712579287147</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="fix: eslint 재설정 / default 레이아웃 추가" />
+    <MESSAGE value="fix: eslint 재설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: eslint 재설정" />
   </component>
 </project>
