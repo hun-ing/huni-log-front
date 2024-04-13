@@ -26,26 +26,28 @@ const route = useRoute()
 </script>
 
 <template>
-  <TheNav />
-  <TheHeader />
+  <v-app>
+    <TheNav />
+    <TheHeader />
 
-  <v-main>
-    <v-container fluid>
-      <v-card class="mb-3" variant="flat">
-        <v-row justif="space-between" align="center">
-          <v-col align-self="center">
-            <p class="text-h5 font-weight-medium">
-              타이틀 {{ route.meta }}
-            </p>
-          </v-col>
-          <v-breadcrumbs :items="items">
-            <template #divider>
-              <v-icon icon="mdi-chevron-right" />
-            </template>
-          </v-breadcrumbs>
-        </v-row>
-      </v-card>
-      <slot />
-    </v-container>
-  </v-main>
+    <v-main>
+      <v-container fluid>
+        <v-card class="mb-3" variant="flat">
+          <v-row justif="space-between" align="center">
+            <v-col align-self="center">
+              <p class="text-h5 font-weight-medium">
+                타이틀 {{ route.meta }}
+              </p>
+            </v-col>
+            <v-breadcrumbs :items="items">
+              <template #divider>
+                <v-icon icon="mdi-chevron-right" />
+              </template>
+            </v-breadcrumbs>
+          </v-row>
+        </v-card>
+        <slot />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
