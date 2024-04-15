@@ -6,6 +6,7 @@ export const useCreateStore = defineStore('createStore', {
   state: () => {
     return {
       rail: false,
+      drawer: true,
     }
   },
   actions,

@@ -4,31 +4,15 @@ import { useRoute } from 'vue-router'
 import TheNav from '~/layouts/the-nav.vue'
 import TheHeader from '~/layouts/the-header.vue'
 
-const items = ref([
-  {
-    title: 'Dashboard',
-    disabled: false,
-    href: 'breadcrumbs_dashboard',
-  },
-  {
-    title: 'Link 1',
-    disabled: false,
-    href: 'breadcrumbs_link_1',
-  },
-  {
-    title: 'Link 2',
-    disabled: true,
-    href: 'breadcrumbs_link_2',
-  },
-])
+const drawer = ref(false)
 
 const route = useRoute()
 </script>
 
 <template>
   <v-app>
-    <TheNav />
-    <TheHeader />
+    <TheNav v-model="drawer" />
+    <TheHeader v-model="drawer" />
 
     <v-main>
       <v-container fluid>
@@ -39,11 +23,6 @@ const route = useRoute()
                 타이틀 {{ route.meta }}
               </p>
             </v-col>
-            <v-breadcrumbs :items="items">
-              <template #divider>
-                <v-icon icon="mdi-chevron-right" />
-              </template>
-            </v-breadcrumbs>
           </v-row>
         </v-card>
         <slot />
