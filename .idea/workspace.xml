@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 레이아웃&#10;&#10;- default 레이아웃 vuetify 적용 진행...">
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 레이아웃&#10;&#10;- toolbar 구현중...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/the-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/getters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/getters.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/vuetify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/vuetify.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +94,8 @@
       <workItem from="1712838368554" duration="1152000" />
       <workItem from="1712926256928" duration="8014000" />
       <workItem from="1713012133099" duration="7846000" />
-      <workItem from="1713174414731" duration="7569000" />
+      <workItem from="1713174414731" duration="7598000" />
+      <workItem from="1713263497083" duration="6199000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -164,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713020439851</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 레이아웃&#10;&#10;- toolbar 구현중...">
+      <option name="closed" value="true" />
+      <created>1713182037138</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713182037138</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +191,7 @@
     <MESSAGE value="fix: eslint 재설정 / default 레이아웃 추가" />
     <MESSAGE value="fix: eslint 재설정" />
     <MESSAGE value="feat: 레이아웃&#10;&#10;- default 레이아웃 vuetify 적용 진행..." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 레이아웃&#10;&#10;- default 레이아웃 vuetify 적용 진행..." />
+    <MESSAGE value="feat: 레이아웃&#10;&#10;- toolbar 구현중..." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 레이아웃&#10;&#10;- toolbar 구현중..." />
   </component>
 </project>
