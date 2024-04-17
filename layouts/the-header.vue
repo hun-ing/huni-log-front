@@ -1,17 +1,8 @@
 <script setup>
-const createStore = useCreateStore()
 const model = defineModel()
 </script>
 
 <template>
-  <!--  <v-app-bar
-    color="primary"
-    height="80"
-  >
-    <v-app-bar-nav-icon variant="text" @click.stop="createStore.toggleRail" />
-    <v-spacer />
-  </v-app-bar> -->
-
   <v-toolbar color="white" border>
     <template #prepend>
       <nuxt-link to="/">
@@ -34,22 +25,22 @@ const model = defineModel()
 
     <v-app-bar-nav-icon class="d-flex d-sm-none" @click.stop="model = !model" />
 
-    <v-toolbar-items>
-      <v-btn variant="text">
-        News
+    <template #append>
+      <v-btn class="text-none text-medium-emphasis text-body-2 text-capitalize px-3 app-btn me-n2">
+        <v-badge color="error" content="2">
+          <v-icon size="x-large">
+            mdi-bell-outline
+          </v-icon>
+        </v-badge>
       </v-btn>
 
       <v-divider vertical length="18" class="mx-2 my-auto ms-3 me-2" />
 
-      <v-btn variant="text">
-        Blog
-      </v-btn>
-
-      <v-divider vertical length="18" class="mx-2 my-auto ms-3 me-2" />
-
-      <v-btn variant="text">
-        Music
-      </v-btn>
-    </v-toolbar-items>
+      <div class="text-none text-medium-emphasis text-body-2 text-capitalize px-3 app-btn me-n2">
+        <v-btn class="font-weight-regular" variant="elevated">
+          로그인
+        </v-btn>
+      </div>
+    </template>
   </v-toolbar>
 </template>
