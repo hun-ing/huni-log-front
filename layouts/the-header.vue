@@ -3,7 +3,7 @@ const model = defineModel()
 </script>
 
 <template>
-  <v-toolbar color="white" border>
+  <v-toolbar color="white">
     <template #prepend>
       <nuxt-link to="/">
         <v-img
