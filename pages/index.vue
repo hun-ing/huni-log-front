@@ -19,6 +19,9 @@ watch(x, (value) => {
   <v-row ref="rowEl">
     <v-list ref="listEl" min-width="200" class="position-fixed bg-transparent" :style="{ left: `${listLeft}px` }">
       <v-list-subheader>태그 목록</v-list-subheader>
+      <NuxtLink to="/editor">
+        editor
+      </NuxtLink>
       <v-divider />
       <v-list-item
         v-for="n in 3"

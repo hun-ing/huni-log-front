@@ -2,8 +2,6 @@
 const createStore = useCreateStore()
 const model = defineModel()
 const items = ref([
-  { text: 'Sample Page', icon: 'mdi-home', to: '/' },
-  { text: '메뉴 관리', icon: 'mdi-menu', to: '/menus' },
 ])
 </script>
 
