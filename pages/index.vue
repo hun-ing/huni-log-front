@@ -21,7 +21,7 @@ watch(x, (value) => {
       <v-list-item
         v-for="n in 3"
         :key="n"
-        :title="`Item ${n}`"
+        :title="`태그 ${n}`"
       />
     </v-list>
     <v-col v-for="n in 5" :key="n" cols="4">
@@ -32,7 +32,7 @@ watch(x, (value) => {
       >
         <v-img
           height="150px"
-          src="~/assets/images/v-text-logo-light.png"
+          src="~/assets/images/logo-small.png"
           cover
         />
 

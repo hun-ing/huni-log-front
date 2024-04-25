@@ -7,10 +7,10 @@ const model = defineModel()
     <template #prepend>
       <nuxt-link to="/">
         <v-img
-          src="~/assets/images/v-text-logo-light.png" width="128" height="30"
+          src="~/assets/images/logo.png" width="180"
         />
       </nuxt-link>
-      <v-btn class="text-disabled text-medium-emphasis text-body-2 text-capitalize px-3 app-btn">
+      <v-btn class="text-disabled text-medium-emphasis text-body-2 text-capitalize px-3 app-btn ms-5">
         <template #prepend>
           <v-icon>mdi-magnify</v-icon>
         </template>

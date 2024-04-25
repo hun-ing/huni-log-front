@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현">
-      <change afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/log.global.ts" afterDir="false" />
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips">
+      <change afterPath="$PROJECT_DIR$/assets/images/Preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/duck-32px_1.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo-small.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/the-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/middleware",
+    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,11 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HuniWorld\frontend\huni-log\assets\images" />
       <recent name="D:\HuniWorld\frontend\huni-log\middleware" />
       <recent name="D:\HuniWorld\frontend\huni-log" />
       <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
-      <recent name="D:\HuniWorld\frontend\huni-log\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
@@ -115,7 +115,7 @@
       <workItem from="1713789438677" duration="501000" />
       <workItem from="1713862779415" duration="8274000" />
       <workItem from="1713949904403" duration="7722000" />
-      <workItem from="1714035620697" duration="11869000" />
+      <workItem from="1714035620697" duration="16226000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -245,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713957787329</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips">
+      <option name="closed" value="true" />
+      <created>1714047615495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714047615495</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="feat: 레이아웃&#10;&#10;- content 영역 구현 완료" />
     <MESSAGE value="feat: 글 작성&#10;&#10;- toast ui editor 적용 및 테스트" />
     <MESSAGE value="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현" />
+    <MESSAGE value="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips" />
   </component>
 </project>

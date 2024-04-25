@@ -27,7 +27,14 @@
   display: none !important;
 }
 
-.custom-chip-group .v-slide-group__content{
+.custom-chip-group .v-slide-group__content {
   justify-content: center;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+* {
+  cursor: url(/assets/images/duck-32px_1.cur) 20 30, auto;
+
 }
 </style>

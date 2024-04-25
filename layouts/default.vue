@@ -28,10 +28,27 @@ onMounted(() => {
           <v-card-item>
             <v-card
               class="mx-auto"
-              prepend-avatar="~/assets/images/logo.svg"
               subtitle="기술 블로그"
               title="후니"
-            />
+            >
+              <template #prepend>
+                <v-img
+                  src="~/assets/images/logo-small.png" width="180"
+                />
+              </template>
+
+              <template #title>
+                <p class="font-weight-bold text-h4">
+                  후니
+                </p>
+              </template>
+
+              <template #subtitle>
+                <p class="text-subtitle-1 pa-0">
+                  기술 블로그
+                </p>
+              </template>
+            </v-card>
           </v-card-item>
           <v-card-item class="mt-15 mb-15">
             <v-chip-group
@@ -41,8 +58,8 @@ onMounted(() => {
               class="custom-chip-group"
             >
               <v-chip
-                v-for="n in 25" :key="n"
-                text="Elevator"
+                v-for="n in 15" :key="n"
+                text="Category"
                 variant="outlined"
                 filter
               />
