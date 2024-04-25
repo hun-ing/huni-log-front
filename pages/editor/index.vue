@@ -8,6 +8,10 @@ definePageMeta({
   layout: 'blank',
 })
 
+const chips = ref([])
+
+function remove(item) { chips.value.splice(chips.value.indexOf(item), 1) }
+
 onMounted(() => {
   console.log('onMounted editor!')
   const viewer = Editor.factory({
@@ -49,6 +53,30 @@ onMounted(() => {
           />
         </v-col>
         <v-divider class="mb-3" />
+        <v-col class="flex-grow-0">
+          <v-combobox
+            v-model="chips"
+            variant="solo-filled"
+            placeholder="태그를 입력해 주세요"
+            chips
+            clearable
+            multiple
+            hide-details
+          >
+            <template #selection="{ attrs, item, select, selected }">
+              <v-chip
+                v-bind="attrs"
+                :model-value="selected"
+                closable
+                @click="select"
+                @click:close="remove(item)"
+              >
+                <strong>{{ item }}</strong>&nbsp;
+                <span>(interest)</span>
+              </v-chip>
+            </template>
+          </v-combobox>
+        </v-col>
         <v-col>
           <div id="editor" />
         </v-col>
