@@ -1,17 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
 import TheNav from '~/layouts/the-nav.vue'
 import TheHeader from '~/layouts/the-header.vue'
 
 const drawer = ref(false)
 
-const route = useRoute()
-
 const length = ref(3)
 const tab = ref(null)
+const isMounted = ref(false)
+const amenities = ref([])
 
 watch(length, val => tab.value = val - 1)
+
+onMounted(() => {
+  console.log('레이아웃 = ', isMounted.value)
+  isMounted.value = true
+})
 </script>
 
 <template>
@@ -20,51 +23,41 @@ watch(length, val => tab.value = val - 1)
     <TheHeader v-model="drawer" />
 
     <v-main>
-      <v-container fluid class="h-100 justify-center align-center bg-amber">
-        <v-card class="bg-blue h-100 v-col-6 ma-auto" variant="flat">
-          <div class="bg-deep-orange">
+      <v-container fluid class="h-100 justify-center align-center">
+        <v-card class="h-100 v-col-6 ma-auto" variant="flat">
+          <v-card-item>
             <v-card
-              append-avatar="https://cdn.vuetifyjs.com/images/john.jpg"
               class="mx-auto"
-              prepend-avatar="https://cdn.vuetifyjs.com/images/logos/v-alt.svg"
-              subtitle="prepend-avatar and append-avatar"
-              title="Avatars"
+              prepend-avatar="~/assets/images/logo.svg"
+              subtitle="기술 블로그"
+              title="후니"
+            />
+          </v-card-item>
+          <v-card-item class="mt-15 mb-15">
+            <v-chip-group
+              v-model="amenities"
+              column
+              multiple
+              class="custom-chip-group"
             >
-              <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</v-card-text>
+              <v-chip
+                v-for="n in 25" :key="n"
+                text="Elevator"
+                variant="outlined"
+                filter
+              />
+            </v-chip-group>
+          </v-card-item>
+          <v-card-item>
+            <v-card
+              color="basil"
+              flat
+            >
+              <v-card-text v-if="isMounted" class="pa-0">
+                <slot />
+              </v-card-text>
             </v-card>
-          </div>
-          <div>
-            <v-tabs
-              v-model="tab"
-              align-tabs="center"
-            >
-              <v-tab
-                v-for="n in length"
-                :key="n"
-                :value="n"
-              >
-                Item {{ n }}
-              </v-tab>
-            </v-tabs>
-          </div>
-          <div class="bg-deep-orange-accent-2">
-            <v-window v-model="tab">
-              <v-window-item
-                v-for="item in length"
-                :key="item"
-                :value="item"
-              >
-                <v-card
-                  color="basil"
-                  flat
-                >
-                  <v-card-text>
-                    <slot />
-                  </v-card-text>
-                </v-card>
-              </v-window-item>
-            </v-window>
-          </div>
+          </v-card-item>
         </v-card>
       </v-container>
     </v-main>

@@ -1,16 +1,15 @@
 <script setup>
-const createStore = useCreateStore()
 const model = defineModel()
 const items = ref([
 ])
 </script>
 
 <template>
-  <v-navigation-drawer v-model="model" temporary>
+  <v-navigation-drawer v-model="model" temporary class="v-navigation-drawer--mobile">
     <v-list :lines="false" density="compact" nav>
       <v-list-item
         v-for="(item, i) in items"
-        :key="i"
+        :key="`nav${i}`"
         link
         :to="item.to"
         active-class="primary"

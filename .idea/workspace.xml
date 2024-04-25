@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- toast ui editor 적용 및 테스트">
-      <change afterPath="$PROJECT_DIR$/layouts/blank.vue" afterDir="false" />
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현">
+      <change afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/log.global.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/the-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-nav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/layouts",
+    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/middleware",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,11 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HuniWorld\frontend\huni-log\middleware" />
+      <recent name="D:\HuniWorld\frontend\huni-log" />
       <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
       <recent name="D:\HuniWorld\frontend\huni-log\components" />
-      <recent name="D:\HuniWorld\frontend\huni-log\content" />
-      <recent name="D:\HuniWorld\frontend\huni-log\pages\editor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
@@ -108,7 +114,8 @@
       <workItem from="1713781248771" duration="5774000" />
       <workItem from="1713789438677" duration="501000" />
       <workItem from="1713862779415" duration="8274000" />
-      <workItem from="1713949904403" duration="7671000" />
+      <workItem from="1713949904403" duration="7722000" />
+      <workItem from="1714035620697" duration="11869000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -230,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713871929897</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현">
+      <option name="closed" value="true" />
+      <created>1713957787329</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713957787329</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +271,7 @@
     <MESSAGE value="feat: 레이아웃&#10;&#10;- content 영역 구현중..." />
     <MESSAGE value="feat: 레이아웃&#10;&#10;- content 영역 구현 완료" />
     <MESSAGE value="feat: 글 작성&#10;&#10;- toast ui editor 적용 및 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- toast ui editor 적용 및 테스트" />
+    <MESSAGE value="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현" />
   </component>
 </project>

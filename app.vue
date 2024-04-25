@@ -26,4 +26,8 @@
 .toastui-editor-mode-switch {
   display: none !important;
 }
+
+.custom-chip-group .v-slide-group__content{
+  justify-content: center;
+}
 </style>

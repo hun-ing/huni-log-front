@@ -1,6 +1,7 @@
 <script setup>
-import { Editor } from '@toast-ui/editor'
 import '@toast-ui/editor/dist/toastui-editor.css'
+import '@toast-ui/editor/dist/i18n/ko-kr'
+import { Editor } from '@toast-ui/editor'
 import { onMounted } from 'vue'
 
 definePageMeta({
@@ -8,6 +9,13 @@ definePageMeta({
 })
 
 onMounted(() => {
+  console.log('onMounted editor!')
+  const viewer = Editor.factory({
+    el: document.querySelector('#viewer'),
+    viewer: true,
+    height: '500px',
+  })
+
   const editor = new Editor({
     el: document.querySelector('#editor'),
     height: '100%',
@@ -21,13 +29,6 @@ onMounted(() => {
     },
   })
   editor.getMarkdown()
-
-  const viewer = Editor.factory({
-    el: document.querySelector('#viewer'),
-    viewer: true,
-    height: '500px',
-    initialValue: editor.getMarkdown(),
-  })
 })
 </script>
 

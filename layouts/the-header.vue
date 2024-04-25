@@ -37,6 +37,14 @@ const model = defineModel()
       <v-divider vertical length="18" class="mx-2 my-auto ms-3 me-2" />
 
       <div class="text-none text-medium-emphasis text-body-2 text-capitalize px-3 app-btn me-n2">
+        <v-btn class="font-weight-regular" variant="elevated" to="/editor">
+          새 글 작성
+        </v-btn>
+      </div>
+
+      <v-divider vertical length="18" class="mx-2 my-auto ms-3 me-2" />
+
+      <div class="text-none text-medium-emphasis text-body-2 text-capitalize px-3 app-btn me-n2">
         <v-btn class="font-weight-regular" variant="elevated">
           로그인
         </v-btn>

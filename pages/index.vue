@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useElementBounding } from '@vueuse/core'
 
-const show = ref(false)
-
 const listLeft = ref(0)
 const rowEl = ref(null)
 const listEl = ref(null)
@@ -19,9 +17,6 @@ watch(x, (value) => {
   <v-row ref="rowEl">
     <v-list ref="listEl" min-width="200" class="position-fixed bg-transparent" :style="{ left: `${listLeft}px` }">
       <v-list-subheader>태그 목록</v-list-subheader>
-      <NuxtLink to="/editor">
-        editor
-      </NuxtLink>
       <v-divider />
       <v-list-item
         v-for="n in 3"
@@ -29,14 +24,15 @@ watch(x, (value) => {
         :title="`Item ${n}`"
       />
     </v-list>
-    <v-col v-for="n in 100" cols="4">
+    <v-col v-for="n in 5" :key="n" cols="4">
       <v-card
         class="mx-auto"
         max-width="300"
+        to="/editor"
       >
         <v-img
           height="150px"
-          src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          src="~/assets/images/v-text-logo-light.png"
           cover
         />
 
