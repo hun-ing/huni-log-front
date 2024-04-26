@@ -28,25 +28,26 @@ watch(x, (value) => {
       <v-card
         class="mx-auto"
         max-width="300"
-        to="/editor"
       >
-        <v-img
-          height="150px"
-          src="~/assets/images/logo-small.png"
-          cover
-        />
+        <NuxtLink to="/viewer" class="custom-nuxt-link">
+          <v-img
+            height="150px"
+            src="~/assets/images/logo-small.png"
+            cover
+          />
 
-        <v-card-item>
-          <v-card-title>
-            Top western road trips
-          </v-card-title>
-        </v-card-item>
+          <v-card-item>
+            <v-card-title>
+              Top western road trips
+            </v-card-title>
+          </v-card-item>
 
-        <v-card-item>
-          <v-card-subtitle>
-            1,000 miles of wonder
-          </v-card-subtitle>
-        </v-card-item>
+          <v-card-item>
+            <v-card-subtitle>
+              1,000 miles of wonder
+            </v-card-subtitle>
+          </v-card-item>
+        </NuxtLink>
 
         <v-divider />
 
@@ -75,3 +76,10 @@ watch(x, (value) => {
     </v-col>
   </v-row>
 </template>
+
+<style scoped>
+.custom-nuxt-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+</style>

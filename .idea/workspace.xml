@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 메인 화면&#10;&#10;- 로고 변경&#10;- 상단 타이틀 영역 변경&#10;- 마우스 커서 변경">
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가">
+      <change afterPath="$PROJECT_DIR$/assets/images/duckdurck_128px.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/viewer/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/assets/images",
+    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -49,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HuniWorld\frontend\huni-log\pages" />
       <recent name="D:\HuniWorld\frontend\huni-log\assets\images" />
       <recent name="D:\HuniWorld\frontend\huni-log\middleware" />
       <recent name="D:\HuniWorld\frontend\huni-log" />
       <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
-      <recent name="D:\HuniWorld\frontend\huni-log\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
@@ -107,7 +113,8 @@
       <workItem from="1713789438677" duration="501000" />
       <workItem from="1713862779415" duration="8274000" />
       <workItem from="1713949904403" duration="7722000" />
-      <workItem from="1714035620697" duration="17154000" />
+      <workItem from="1714035620697" duration="17262000" />
+      <workItem from="1714103752426" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -253,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714054186979</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가">
+      <option name="closed" value="true" />
+      <created>1714054760176</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714054760176</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +297,7 @@
     <MESSAGE value="feat: 글 작성&#10;&#10;- toast ui editor 레이아웃 구현&#10;- toast ui editor &amp; viewer 분리 구현" />
     <MESSAGE value="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips" />
     <MESSAGE value="feat: 메인 화면&#10;&#10;- 로고 변경&#10;- 상단 타이틀 영역 변경&#10;- 마우스 커서 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 메인 화면&#10;&#10;- 로고 변경&#10;- 상단 타이틀 영역 변경&#10;- 마우스 커서 변경" />
+    <MESSAGE value="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가" />
   </component>
 </project>

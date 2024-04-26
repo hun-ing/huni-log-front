@@ -13,7 +13,6 @@ const chips = ref([])
 function remove(item) { chips.value.splice(chips.value.indexOf(item), 1) }
 
 onMounted(() => {
-  console.log('onMounted editor!')
   const viewer = Editor.factory({
     el: document.querySelector('#viewer'),
     viewer: true,
@@ -78,7 +77,7 @@ onMounted(() => {
           </v-combobox>
         </v-col>
         <v-col>
-          <div id="editor" />
+          <div id="editor" spellcheck="false" />
         </v-col>
       </v-row>
     </v-col>

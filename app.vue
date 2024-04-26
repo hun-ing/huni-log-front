@@ -34,7 +34,14 @@
 }
 
 * {
-  cursor: url(/assets/images/duck-32px_1.cur) 20 30, auto;
+  //cursor: url(/assets/images/duckdurck_128px.cur) 50 50, auto;
+}
 
+::spelling-error {
+  text-decoration: wavy red underline;
+}
+
+.ProseMirror>div {
+  font-size: 16px !important;
 }
 </style>

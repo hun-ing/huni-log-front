@@ -70,7 +70,7 @@ onMounted(() => {
               color="basil"
               flat
             >
-              <v-card-text v-if="isMounted" class="pa-0">
+              <v-card-text v-if="isMounted" class="pa-1">
                 <slot />
               </v-card-text>
             </v-card>
