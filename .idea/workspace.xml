@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가">
-      <change afterPath="$PROJECT_DIR$/assets/images/duckdurck_128px.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/viewer/index.vue" afterDir="false" />
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성, 메인, 뷰어&#10;&#10;- 글 작성 스펠 체크 제거&#10;- 메인 레이아웃 다듬기&#10;- 뷰어 구성 진행중...">
+      <change afterPath="$PROJECT_DIR$/assets/markdownContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/the-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/viewer/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/viewer/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.lint.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "D:\\HuniWorld\\frontend\\huni-log\\huni-log\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HuniWorld/frontend/huni-log/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\HuniWorld\\frontend\\huni-log\\huni-log\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
@@ -62,6 +64,7 @@
       <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HuniWorld\frontend\huni-log\assets" />
       <recent name="D:\HuniWorld\frontend\huni-log\pages" />
     </key>
   </component>
@@ -114,7 +117,8 @@
       <workItem from="1713862779415" duration="8274000" />
       <workItem from="1713949904403" duration="7722000" />
       <workItem from="1714035620697" duration="17262000" />
-      <workItem from="1714103752426" duration="6232000" />
+      <workItem from="1714103752426" duration="6491000" />
+      <workItem from="1714186763317" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -268,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714054760176</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: 글 작성, 메인, 뷰어&#10;&#10;- 글 작성 스펠 체크 제거&#10;- 메인 레이아웃 다듬기&#10;- 뷰어 구성 진행중...">
+      <option name="closed" value="true" />
+      <created>1714112314820</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714112314820</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +310,7 @@
     <MESSAGE value="feat: 메인 화면&#10;&#10;- 레이아웃 정리&#10;- 레이아웃 구성 요소 변경 tabs -&gt; chips" />
     <MESSAGE value="feat: 메인 화면&#10;&#10;- 로고 변경&#10;- 상단 타이틀 영역 변경&#10;- 마우스 커서 변경" />
     <MESSAGE value="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- 태그 입력 요소 추가" />
+    <MESSAGE value="feat: 글 작성, 메인, 뷰어&#10;&#10;- 글 작성 스펠 체크 제거&#10;- 메인 레이아웃 다듬기&#10;- 뷰어 구성 진행중..." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성, 메인, 뷰어&#10;&#10;- 글 작성 스펠 체크 제거&#10;- 메인 레이아웃 다듬기&#10;- 뷰어 구성 진행중..." />
   </component>
 </project>
