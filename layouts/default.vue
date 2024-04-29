@@ -28,8 +28,6 @@ onMounted(() => {
           <v-card-item>
             <v-card
               class="mx-auto"
-              subtitle="기술 블로그"
-              title="후니"
             >
               <template #prepend>
                 <v-img

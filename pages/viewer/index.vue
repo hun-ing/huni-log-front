@@ -6,6 +6,10 @@ import { onMounted } from 'vue'
 import { useElementBounding } from '@vueuse/core'
 import { markdownContent } from '~/assets/markdownContent.js'
 
+definePageMeta({
+  layout: 'viewer',
+})
+
 const listRight = ref(0)
 const rowEl = ref(null)
 const listEl = ref(null)
