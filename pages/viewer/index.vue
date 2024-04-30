@@ -74,10 +74,3 @@ onMounted(() => {
     </v-col>
   </v-row>
 </template>
-
-<style scoped>
-.text-decoration-none {
-  text-decoration: none !important;
-  color: inherit;
-}
-</style>

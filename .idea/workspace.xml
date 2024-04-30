@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 뷰어&#10;&#10;- title navigation 옵저버 구현">
-      <change afterPath="$PROJECT_DIR$/layouts/viewer.vue" afterDir="false" />
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 뷰어&#10;&#10;- 레이아웃 및 요소 배치 진행중...">
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/viewer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/viewer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/viewer/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/viewer/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,26 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/HuniWorld/frontend/huni-log/layouts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.lint.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "D:\\HuniWorld\\frontend\\huni-log\\huni-log\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HuniWorld/frontend/huni-log/layouts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\HuniWorld\\frontend\\huni-log\\huni-log\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\HuniWorld\frontend\huni-log\layouts" />
@@ -121,7 +123,8 @@
       <workItem from="1714103752426" duration="6491000" />
       <workItem from="1714186763317" duration="5656000" />
       <workItem from="1714305945099" duration="2427000" />
-      <workItem from="1714383221855" duration="6811000" />
+      <workItem from="1714383221855" duration="6882000" />
+      <workItem from="1714478073388" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -307,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714387665183</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: 뷰어&#10;&#10;- 레이아웃 및 요소 배치 진행중...">
+      <option name="closed" value="true" />
+      <created>1714390095449</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714390095449</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +352,7 @@
     <MESSAGE value="feat: 뷰어&#10;&#10;- scroll spy 구현" />
     <MESSAGE value="feat: 뷰어&#10;&#10;- Intersection Observer API 제목 트리거 옵션 조정" />
     <MESSAGE value="feat: 뷰어&#10;&#10;- title navigation 옵저버 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 뷰어&#10;&#10;- title navigation 옵저버 구현" />
+    <MESSAGE value="feat: 뷰어&#10;&#10;- 레이아웃 및 요소 배치 진행중..." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 뷰어&#10;&#10;- 레이아웃 및 요소 배치 진행중..." />
   </component>
 </project>
