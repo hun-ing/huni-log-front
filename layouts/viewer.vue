@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import TheNav from '~/layouts/the-nav.vue'
 import TheHeader from '~/layouts/the-header.vue'
+import CommentList from '~/components/layouts/CommentList.vue'
 
 const drawer = ref(false)
+const isShown = ref(false)
 
 const length = ref(3)
 const tab = ref(null)
@@ -13,6 +15,10 @@ watch(length, val => tab.value = val - 1)
 onMounted(() => {
   isMounted.value = true
 })
+
+function toggleCommentVisibility() {
+  isShown.value = !isShown.value
+}
 </script>
 
 <template>
@@ -157,6 +163,12 @@ onMounted(() => {
             </v-row>
           </v-card-item>
 
+          <v-divider />
+
+          <CommentList />
+
+          <v-divider />
+
           <v-card-item class="pt-3 pb-3">
             <v-card>
               <template #prepend>
@@ -184,6 +196,9 @@ onMounted(() => {
                 <v-btn variant="plain">
                   삭제
                 </v-btn>
+                <v-btn variant="plain">
+                  댓글
+                </v-btn>
               </template>
 
               <v-card-text>
@@ -191,12 +206,12 @@ onMounted(() => {
               </v-card-text>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" class="font-weight-bold">
-                  +답글 달기
+                <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
+                  {{ isShown ? '-숨기기' : '+답글 달기' }}
                 </v-btn>
               </v-card-actions>
 
-              <v-card-item>
+              <v-card-item v-if="isShown">
                 <v-row justify="end" class="pa-5  bg-grey-lighten-5">
                   <v-col cols="12">
                     <v-textarea
@@ -249,6 +264,9 @@ onMounted(() => {
                 <v-btn variant="plain">
                   삭제
                 </v-btn>
+                <v-btn variant="plain">
+                  댓글
+                </v-btn>
               </template>
 
               <v-card-text>
@@ -256,12 +274,12 @@ onMounted(() => {
               </v-card-text>
 
               <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" class="font-weight-bold">
-                  +답글 달기
+                <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
+                  {{ isShown ? '-숨기기' : '+답글 달기' }}
                 </v-btn>
               </v-card-actions>
 
-              <v-card-item>
+              <v-card-item v-if="isShown">
                 <v-card class="pa-5 bg-grey-lighten-5">
                   <template #prepend>
                     <v-img
@@ -288,6 +306,9 @@ onMounted(() => {
                     <v-btn variant="plain">
                       삭제
                     </v-btn>
+                    <v-btn variant="plain">
+                      댓글
+                    </v-btn>
                   </template>
 
                   <v-card-text>
@@ -295,12 +316,12 @@ onMounted(() => {
                   </v-card-text>
 
                   <v-card-actions>
-                    <v-btn color="deep-purple-lighten-2" class="font-weight-bold">
-                      +숨기기
+                    <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
+                      {{ isShown ? '-숨기기' : '+답글 달기' }}
                     </v-btn>
                   </v-card-actions>
 
-                  <v-card-item>
+                  <v-card-item v-if="isShown">
                     <v-row justify="end" class="pa-5 bg-grey-lighten-4">
                       <v-col cols="12">
                         <v-textarea
