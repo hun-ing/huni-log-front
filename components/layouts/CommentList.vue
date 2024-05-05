@@ -1,11 +1,11 @@
 <script setup>
 import CommentCard from '~/components/layouts/CommentCard.vue'
+
+defineProps(['comments'])
 </script>
 
 <template>
-  <CommentCard />
-  <CommentCard />
-  <CommentCard />
+  <CommentCard v-for="comment in comments" :comment />
 </template>
 
 <style scoped>

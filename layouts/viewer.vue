@@ -19,6 +19,32 @@ onMounted(() => {
 function toggleCommentVisibility() {
   isShown.value = !isShown.value
 }
+
+const comments = ref([
+  {
+    content: '댓글1',
+    depth: 1,
+    comments: [
+      {
+        content: '대댓글1',
+        depth: 2,
+        comments: [
+          {
+            content: '대대댓글1',
+            depth: 3,
+            comments: [
+              {
+                content: '대대대댓글1',
+                depth: 4,
+                comments: [],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+])
 </script>
 
 <template>
@@ -165,187 +191,7 @@ function toggleCommentVisibility() {
 
           <v-divider />
 
-          <CommentList />
-
-          <v-divider />
-
-          <v-card-item class="pt-3 pb-3">
-            <v-card>
-              <template #prepend>
-                <v-img
-                  src="~/assets/images/logo-small.png" width="60"
-                />
-              </template>
-
-              <template #title>
-                <p class="font-weight-bold text-h5">
-                  후니
-                </p>
-              </template>
-
-              <template #subtitle>
-                <p class="text-subtitle-2 pa-0">
-                  기술 블로그
-                </p>
-              </template>
-
-              <template #append>
-                <v-btn variant="plain">
-                  수정
-                </v-btn>
-                <v-btn variant="plain">
-                  삭제
-                </v-btn>
-                <v-btn variant="plain">
-                  댓글
-                </v-btn>
-              </template>
-
-              <v-card-text>
-                댓글1
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
-                  {{ isShown ? '-숨기기' : '+답글 달기' }}
-                </v-btn>
-              </v-card-actions>
-
-              <v-card-item v-if="isShown">
-                <v-row justify="end" class="pa-5  bg-grey-lighten-5">
-                  <v-col cols="12">
-                    <v-textarea
-                      row-height="15"
-                      rows="3"
-                      class="bg-white"
-                      variant="outlined"
-                      auto-grow
-                      no-resize
-                      placeholder="댓글을 작성하세요"
-                      hide-details
-                    />
-                  </v-col>
-                  <v-col cols="auto">
-                    <v-btn variant="elevated" color="deep-purple-lighten-2">
-                      댓글 작성
-                    </v-btn>
-                  </v-col>
-                </v-row>
-              </v-card-item>
-            </v-card>
-          </v-card-item>
-
-          <v-divider />
-
-          <v-card-item class="pt-3 pb-3">
-            <v-card>
-              <template #prepend>
-                <v-img
-                  src="~/assets/images/logo-small.png" width="60"
-                />
-              </template>
-
-              <template #title>
-                <p class="font-weight-bold text-h5">
-                  후니
-                </p>
-              </template>
-
-              <template #subtitle>
-                <p class="text-subtitle-2 pa-0">
-                  기술 블로그
-                </p>
-              </template>
-
-              <template #append>
-                <v-btn variant="plain">
-                  수정
-                </v-btn>
-                <v-btn variant="plain">
-                  삭제
-                </v-btn>
-                <v-btn variant="plain">
-                  댓글
-                </v-btn>
-              </template>
-
-              <v-card-text>
-                댓글1
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
-                  {{ isShown ? '-숨기기' : '+답글 달기' }}
-                </v-btn>
-              </v-card-actions>
-
-              <v-card-item v-if="isShown">
-                <v-card class="pa-5 bg-grey-lighten-5">
-                  <template #prepend>
-                    <v-img
-                      src="~/assets/images/logo-small.png" width="60"
-                    />
-                  </template>
-
-                  <template #title>
-                    <p class="font-weight-bold text-h5">
-                      후니
-                    </p>
-                  </template>
-
-                  <template #subtitle>
-                    <p class="text-subtitle-2 pa-0">
-                      기술 블로그
-                    </p>
-                  </template>
-
-                  <template #append>
-                    <v-btn variant="plain">
-                      수정
-                    </v-btn>
-                    <v-btn variant="plain">
-                      삭제
-                    </v-btn>
-                    <v-btn variant="plain">
-                      댓글
-                    </v-btn>
-                  </template>
-
-                  <v-card-text>
-                    댓글1
-                  </v-card-text>
-
-                  <v-card-actions>
-                    <v-btn color="deep-purple-lighten-2" class="font-weight-bold" @click="toggleCommentVisibility">
-                      {{ isShown ? '-숨기기' : '+답글 달기' }}
-                    </v-btn>
-                  </v-card-actions>
-
-                  <v-card-item v-if="isShown">
-                    <v-row justify="end" class="pa-5 bg-grey-lighten-4">
-                      <v-col cols="12">
-                        <v-textarea
-                          row-height="15"
-                          rows="3"
-                          class="bg-white"
-                          variant="outlined"
-                          auto-grow
-                          no-resize
-                          placeholder="댓글을 작성하세요"
-                          hide-details
-                        />
-                      </v-col>
-                      <v-col cols="auto">
-                        <v-btn variant="elevated" color="deep-purple-lighten-2">
-                          댓글 작성
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-card-item>
-                </v-card>
-              </v-card-item>
-            </v-card>
-          </v-card-item>
+          <CommentList :comments />
         </v-card>
       </v-container>
     </v-main>

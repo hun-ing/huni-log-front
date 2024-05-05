@@ -1,6 +1,8 @@
 <script setup>
 import CommentEditor from '~/components/layouts/CommentEditor.vue'
 
+defineProps(['comment', 'isChild', 'depth'])
+
 const isShownCard = ref(false)
 const isShownEditor = ref(false)
 function toggleCommentCard() {
@@ -13,7 +15,7 @@ function toggleCommentEditor() {
 
 <template>
   <v-card-item class="pt-3 pb-3">
-    <v-card>
+    <v-card :class="isChild ? 'pa-5 bg-grey-lighten-5' : ''">
       <template #prepend>
         <v-img
           src="~/assets/images/logo-small.png" width="60"
@@ -45,7 +47,7 @@ function toggleCommentEditor() {
       </template>
 
       <v-card-text>
-        댓글1
+        {{ comment.content }}
       </v-card-text>
 
       <v-card-actions>
@@ -57,6 +59,10 @@ function toggleCommentEditor() {
       <v-card-item v-if="isShownEditor">
         <CommentEditor />
       </v-card-item>
+
+      <div v-if="isShownCard">
+        <CommentCard v-for="item in comment.comments" :comment="item" :is-child="true" :depth="item.depth" />
+      </div>
     </v-card>
   </v-card-item>
 </template>
