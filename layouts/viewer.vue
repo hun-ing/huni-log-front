@@ -4,7 +4,6 @@ import TheHeader from '~/layouts/the-header.vue'
 import CommentList from '~/components/layouts/CommentList.vue'
 
 const drawer = ref(false)
-const isShown = ref(false)
 
 const length = ref(3)
 const tab = ref(null)
@@ -15,10 +14,6 @@ watch(length, val => tab.value = val - 1)
 onMounted(() => {
   isMounted.value = true
 })
-
-function toggleCommentVisibility() {
-  isShown.value = !isShown.value
-}
 
 const comments = ref([
   {

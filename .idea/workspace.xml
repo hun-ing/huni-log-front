@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 뷰어&#10;&#10;- 댓글 작성 및 대댓글 컴포넌트화 구조 구상 진행중...">
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layouts/CommentCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layouts/CommentCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layouts/CommentList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layouts/CommentList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/viewer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/viewer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/HuniWorld/frontend/huni-log/components/layouts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HuniWorld/frontend/huni-log-front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -125,7 +124,11 @@
       <workItem from="1714478073388" duration="7827000" />
       <workItem from="1714645838106" duration="6757000" />
       <workItem from="1714728638454" duration="204000" />
-      <workItem from="1714911197023" duration="2390000" />
+      <workItem from="1714911197023" duration="2709000" />
+      <workItem from="1715768710230" duration="645000" />
+      <workItem from="1715769403372" duration="1202000" />
+      <workItem from="1717148310179" duration="120000" />
+      <workItem from="1720444643687" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -335,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714655108929</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화">
+      <option name="closed" value="true" />
+      <created>1714913714844</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1714913714844</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +383,7 @@
     <MESSAGE value="feat: 뷰어&#10;&#10;- 레이아웃 및 요소 배치 진행중..." />
     <MESSAGE value="feat: 뷰어&#10;&#10;- 목록 구성 디자인&#10;- footer 구성 추가 및 디자인&#10;- 댓글 작성 및 대댓글 구성 추가 및 디자인" />
     <MESSAGE value="feat: 뷰어&#10;&#10;- 댓글 작성 및 대댓글 컴포넌트화 구조 구상 진행중..." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 뷰어&#10;&#10;- 댓글 작성 및 대댓글 컴포넌트화 구조 구상 진행중..." />
+    <MESSAGE value="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화" />
   </component>
 </project>

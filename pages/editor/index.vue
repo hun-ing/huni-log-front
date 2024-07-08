@@ -76,8 +76,20 @@ onMounted(() => {
             </template>
           </v-combobox>
         </v-col>
-        <v-col>
+        <v-col class="pb-0 ">
           <div id="editor" spellcheck="false" />
+        </v-col>
+        <v-col class="flex-grow-0 pb-0">
+          <div class="text-end">
+            <v-btn
+              class="text-none"
+              color="success"
+              variant="elevated"
+              width="90"
+            >
+              저장하기
+            </v-btn>
+          </div>
         </v-col>
       </v-row>
     </v-col>
