@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화">
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 글 작성&#10;&#10;- 저장하기 버튼 추가">
+      <change afterPath="$PROJECT_DIR$/server/api/hello.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/viewer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/viewer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,7 @@
       <workItem from="1715768710230" duration="645000" />
       <workItem from="1715769403372" duration="1202000" />
       <workItem from="1717148310179" duration="120000" />
-      <workItem from="1720444643687" duration="1592000" />
+      <workItem from="1720444643687" duration="5825000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -346,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714913714844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: 글 작성&#10;&#10;- 저장하기 버튼 추가">
+      <option name="closed" value="true" />
+      <created>1720446307138</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1720446307138</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +393,7 @@
     <MESSAGE value="feat: 뷰어&#10;&#10;- 목록 구성 디자인&#10;- footer 구성 추가 및 디자인&#10;- 댓글 작성 및 대댓글 구성 추가 및 디자인" />
     <MESSAGE value="feat: 뷰어&#10;&#10;- 댓글 작성 및 대댓글 컴포넌트화 구조 구상 진행중..." />
     <MESSAGE value="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 뷰어&#10;&#10;- 댓글 및 대댓글 컴포넌트화" />
+    <MESSAGE value="feat: 글 작성&#10;&#10;- 저장하기 버튼 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 글 작성&#10;&#10;- 저장하기 버튼 추가" />
   </component>
 </project>

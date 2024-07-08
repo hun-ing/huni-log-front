@@ -30,6 +30,29 @@ onMounted(() => {
         viewer.setMarkdown(value)
       },
     },
+    hooks: {
+      addImageBlobHook: async (blob, callback) => {
+        try {
+          const runtimeConfig = useRuntimeConfig()
+
+          const formData = new FormData()
+          formData.append('image', blob)
+
+          const { data } = await useFetch(`${runtimeConfig.public.apiBase}/api/image-upload`, {
+            method: 'POST',
+            body: formData,
+          })
+
+          const filename = data.value
+
+          const imageUrl = `${runtimeConfig.public.apiBase}/api/image-print?filename=${filename}`
+          callback(imageUrl, 'image alt attribute')
+        }
+        catch (error) {
+          console.error('업로드 실패 : ', error)
+        }
+      },
+    },
   })
   editor.getMarkdown()
 })

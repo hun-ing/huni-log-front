@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        config.plugins.push(vuetify({ autoImport: true }))
+        config.plugins?.push(vuetify({ autoImport: true }))
       })
     },
     '@pinia/nuxt',
@@ -32,4 +32,9 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**'],
   },
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      apiBase: '/api',
+    },
+  },
 })
