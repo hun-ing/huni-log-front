@@ -8,9 +8,14 @@ definePageMeta({
   layout: 'blank',
 })
 
+const title = ref('')
 const chips = ref([])
 
+const runtimeConfig = useRuntimeConfig()
+
 function remove(item) { chips.value.splice(chips.value.indexOf(item), 1) }
+
+let editor = null
 
 onMounted(() => {
   const viewer = Editor.factory({
@@ -19,7 +24,7 @@ onMounted(() => {
     height: '500px',
   })
 
-  const editor = new Editor({
+  editor = new Editor({
     el: document.querySelector('#editor'),
     height: '100%',
     initialEditType: 'markdown',
@@ -33,8 +38,6 @@ onMounted(() => {
     hooks: {
       addImageBlobHook: async (blob, callback) => {
         try {
-          const runtimeConfig = useRuntimeConfig()
-
           const formData = new FormData()
           formData.append('image', blob)
 
@@ -56,6 +59,30 @@ onMounted(() => {
   })
   editor.getMarkdown()
 })
+
+async function onSubmit() {
+  console.log(editor.getMarkdown())
+  console.log(chips.value)
+  console.log(title.value)
+
+  try {
+    const request = {
+      title: title.value,
+      content: editor.getMarkdown(),
+      categories: chips.value,
+    }
+
+    const { data } = await useFetch(`${runtimeConfig.public.apiBase}/api/post`, {
+      method: 'POST',
+      body: JSON.stringify(request),
+    })
+
+    console.log(data)
+  }
+  catch (error) {
+    console.error('저장 실패 : ', error)
+  }
+}
 </script>
 
 <template>
@@ -64,6 +91,7 @@ onMounted(() => {
       <v-row class="h-100 flex-column">
         <v-col class="flex-grow-0">
           <v-textarea
+            v-model="title"
             row-height="15"
             rows="1"
             class="custom-placeholder-color"
@@ -109,6 +137,7 @@ onMounted(() => {
               color="success"
               variant="elevated"
               width="90"
+              @click="onSubmit"
             >
               저장하기
             </v-btn>

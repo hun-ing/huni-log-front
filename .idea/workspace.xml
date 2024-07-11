@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: 설정, 글 작성&#10;&#10;# 설정&#10; - api base 설정 추가&#10; &#10;# 글 작성&#10; - 이미지 추가 시 byte -&gt;파일명으로 표시 로직(addImageBlobHook) 추가">
+    <list default="true" id="0321c0f6-88cc-46ea-8863-0747ba921de1" name="Changes" comment="feat: .gitignore 설정 변경">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +130,7 @@
       <workItem from="1717148310179" duration="120000" />
       <workItem from="1720444643687" duration="6147000" />
       <workItem from="1720704770392" duration="872000" />
+      <workItem from="1720707348222" duration="1689000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
